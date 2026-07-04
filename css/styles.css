@@ -652,3 +652,43 @@ a.card { display: block; }
 .contact-info__item a:hover { color: var(--teal); }
 @media (max-width: 768px) { .contact-info { grid-template-columns: 1fr; gap: 0; } }
 
+
+/* ============================================================
+   PARTNERS — insurance / health-scheme logo wall
+   ============================================================ */
+.partner-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; }
+.partner {
+  flex: 0 1 calc(25% - 17px);
+  background: #fff; border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  padding: 26px; min-height: 138px; box-shadow: var(--shadow-sm);
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+.partner:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.partner img { max-width: 100%; max-height: 96px; object-fit: contain; }
+@media (max-width: 900px) { .partner { flex-basis: calc(33.333% - 15px); } }
+@media (max-width: 600px) { .partner-grid { gap: 14px; } .partner { flex-basis: calc(50% - 7px); min-height: 116px; padding: 20px; } }
+
+/* ============================================================
+   TEAM — doctors & staff photos
+   ============================================================ */
+.team-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+.team-photo { margin: 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+.team-photo img { width: 100%; display: block; }
+.team-grid .team-photo img { height: 100%; object-fit: cover; aspect-ratio: 4 / 3; }
+.team-photo--wide { max-width: 860px; margin: 0 auto; }
+.team-photo--wide img { width: 100%; height: auto; }
+@media (max-width: 768px) { .team-grid { grid-template-columns: 1fr; gap: 18px; } }
+
+/* ============================================================
+   LOGO — real emblem in the badge
+   ============================================================ */
+.logo__mark { padding: 3px; overflow: hidden; }
+.logo__mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+/* ============================================================
+   PHOTO STRIP — authentic photos on service pages
+   ============================================================ */
+.photo-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.photo-strip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; transition: transform var(--t-base); }
+.photo-strip img:hover { transform: scale(1.02); }

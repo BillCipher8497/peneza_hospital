@@ -8,13 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/logo-mark.png">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <nav class="nav" id="nav">
   <div class="container nav__inner">
     <a class="logo" href="index.html" aria-label="Peneza Hospital home">
-      <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#006B5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-5 4 10 2-5h7"/></svg></span>
+      <span class="logo__mark"><img src="images/logo-mark.png" alt="Peneza Hospital logo"></span>
       <span class="logo__text">
         <span class="logo__name">Peneza</span>
         <span class="logo__tag">Hospital · Rongo</span>
@@ -22,13 +23,13 @@
     </a>
     <ul class="nav__links">
       <li><a class="navlink active" href="index.html">Home</a></li>
-      <li><a class="navlink" href="about.html">About</a></li>
+      <li><a class="navlink" href="about.html">About</a></li><li><a class="navlink" href="team.html">Team</a></li>
       <li class="has-drop">
         <a class="navlink" href="#" aria-haspopup="true">Services</a>
         <div class="dropdown"><a href="about.html#wards">Inpatient Services</a><a href="emergency.html">Emergency</a><a href="theatre.html">Theatre / Surgery</a><a href="laboratory.html">Laboratory</a><a href="pharmacy.html">Pharmacy</a><a href="maternity.html">Maternity &amp; MCH</a><a href="ambulance.html">Ambulance</a><a href="mental-wellness.html">Mental Wellness</a><a href="contact.html">Outpatient / Special Clinics</a></div>
       </li>
       <li><a class="navlink" href="packages.html">Packages</a></li>
-      <li><a class="navlink" href="gallery.html">Gallery</a></li>
+      <li><a class="navlink" href="partners.html">Partners</a></li><li><a class="navlink" href="gallery.html">Gallery</a></li>
       <li><a class="navlink" href="contact.html">Contact</a></li>
     </ul>
     <div class="nav__actions">
@@ -40,9 +41,11 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
+  <a href="team.html">Team</a>
   <span class="mm-sub">Services</span>
   <a href="about.html#wards">Inpatient Services</a><a href="emergency.html">Emergency</a><a href="theatre.html">Theatre / Surgery</a><a href="laboratory.html">Laboratory</a><a href="pharmacy.html">Pharmacy</a><a href="maternity.html">Maternity &amp; MCH</a><a href="ambulance.html">Ambulance</a><a href="mental-wellness.html">Mental Wellness</a><a href="contact.html">Outpatient / Special Clinics</a>
   <a href="packages.html">Packages</a>
+  <a href="partners.html">Partners</a>
   <a href="gallery.html">Gallery</a>
   <a href="contact.html">Contact</a>
   <a class="mm-emergency" href="tel:+25472698422">Emergency: +254 72698422</a>
@@ -84,12 +87,17 @@
       <span class="arrow-link">Learn more &rarr;</span></a></div>
 </div></section>
 <section class="section section--light"><div class="container"><div class="split">
-  <div class="split__media tilt"><div class="tilt__glare"></div><img src="images/home/HOME%20USE.jpeg" alt="Peneza Hospital, Rongo" loading="lazy"></div>
-  <div class="reveal"><span class="eyebrow">Welcome to Peneza</span><h2>Your Path to Healing Begins Here</h2>
-  <p>At Peneza Hospital we have created modern, calm healing environments where patients feel cared for from the moment they arrive. Our teams combine clinical expertise with genuine warmth.</p>
-  <p>We invest in patient health education, well-equipped wards staffed around the clock, and a team-based approach that keeps you and your family at the centre of every decision.</p>
-  <a class="arrow-link" href="about.html">Learn More About Us &rarr;</a></div>
+  <div class="split__media tilt"><div class="tilt__glare"></div><img src="images/team/staff-group.jpeg" alt="Peneza Hospital staff outside the hospital" loading="lazy"></div>
+  <div class="reveal"><span class="eyebrow">Who We Are</span><h2>About Peneza Hospital</h2>
+  <p>Peneza Healthcare Ltd, trading as Peneza Hospital, is a duly registered Level 4 private hospital, licensed by the Kenya Medical Practitioners and Dentists Council (KMPDC) to operate within Rongo Sub-County, Migori County, Kenya.</p>
+  <p>The hospital has been operational since 8th January 2024, providing quality healthcare services to residents of Rongo Sub-County, Migori County, and the neighboring counties within the Nyanza region.</p>
+  <a class="arrow-link" href="team.html">Meet Our Team &rarr;</a></div>
 </div></div></section>
+<section class="section"><div class="container" style="max-width:840px;text-align:center">
+  <span class="eyebrow">Our Vision</span>
+  <p class="pullquote" style="margin:8px auto 26px">The hospital's vision is to provide Patient-Centered Quality health Care while upholding the highest standards of medical ethics, alleviating suffering, restoring health, and saving lives.</p>
+  <p class="muted">Through its commitment to excellence, professionalism, ethical medical practice, and compassionate care, Peneza Hospital continues to play a vital role in improving access to quality healthcare services within Migori County and the wider Nyanza region.</p>
+</div></section>
 <section class="section"><div class="container">
   <div class="section-head"><span class="eyebrow">Inpatient Care</span><h2>Our Inpatient Wards</h2>
   <p>Five dedicated wards, each designed around the people it serves. See them all in our <a href="gallery.html" class="arrow-link" style="font-size:inherit">gallery &rarr;</a></p></div>
@@ -138,7 +146,7 @@
     <div class="footer__grid">
       <div>
         <a class="logo" href="index.html">
-          <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#006B5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-5 4 10 2-5h7"/></svg></span>
+          <span class="logo__mark"><img src="images/logo-mark.png" alt="Peneza Hospital logo"></span>
           <span class="logo__text"><span class="logo__name">Peneza</span><span class="logo__tag">Hospital · Rongo</span></span>
         </a>
         <p class="footer__tag">Patient Centred Quality Healthcare. Delivering compassionate, expert medical care to the people of Rongo and beyond, 24 hours a day.</p>
@@ -149,6 +157,7 @@
         <div class="footer__links">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
+          <a href="team.html">Team</a>
           <a href="emergency.html">Emergency</a>
           <a href="theatre.html">Theatre &amp; Surgery</a>
           <a href="laboratory.html">Laboratory</a>
@@ -157,6 +166,7 @@
           <a href="ambulance.html">Ambulance</a>
           <a href="mental-wellness.html">Mental Wellness</a>
           <a href="packages.html">Packages</a>
+  <a href="partners.html">Partners</a>
           <a href="gallery.html">Gallery</a>
           <a href="contact.html">Contact</a>
         </div>
