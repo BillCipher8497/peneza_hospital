@@ -5,23 +5,25 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-  --teal:        #006B5E;
-  --teal-dark:   #02564B;
-  --teal-light:  #E6F0EE;
-  --gold:        #E8A838;
-  --gold-dark:   #C98E26;
-  --dark:        #1A2E3B;
-  --dark-90:     rgba(26, 46, 59, 0.90);
+  --teal:        #21316B;
+  --teal-dark:   #17224E;
+  --teal-light:  #E9F2FB;
+  --gold:        #E23A2E;
+  --gold-dark:   #C22C21;
+  --dark:        #111726;
+  --dark-90:     rgba(17, 23, 38, 0.90);
   --light-bg:    #F5F7F9;
   --white:       #FFFFFF;
   --muted:       #6B7C88;
   --border:      #E2E8ED;
   --red:         #C0392B;
+  --lightblue:   #35B6E8;
+  --lightblue-dark: #1E9AD0;
   --red-dark:    #A2301F;
 
-  --shadow-sm:   0 2px 8px rgba(26, 46, 59, 0.06);
-  --shadow-md:   0 6px 24px rgba(26, 46, 59, 0.10);
-  --shadow-lg:   0 14px 44px rgba(26, 46, 59, 0.16);
+  --shadow-sm:   0 2px 8px rgba(17, 23, 38, 0.06);
+  --shadow-md:   0 6px 24px rgba(17, 23, 38, 0.10);
+  --shadow-lg:   0 14px 44px rgba(17, 23, 38, 0.16);
 
   --radius:      8px;
   --radius-lg:   14px;
@@ -101,7 +103,7 @@ p  { color: var(--dark); }
   white-space: nowrap; line-height: 1;
 }
 .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
-.btn--gold  { background: var(--gold); color: var(--dark); }
+.btn--gold  { background: var(--gold); color: var(--white); }
 .btn--gold:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .btn--teal  { background: var(--teal); color: var(--white); }
 .btn--teal:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
@@ -215,8 +217,8 @@ p  { color: var(--dark); }
 .hero--half { min-height: 62vh; }
 .hero__bg { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 0; }
 .hero__overlay { position: absolute; inset: 0; z-index: 1; }
-.hero__overlay--dark { background: linear-gradient(180deg, rgba(26,46,59,0.55), rgba(26,46,59,0.72)); }
-.hero__overlay--teal { background: linear-gradient(180deg, rgba(0,107,94,0.62), rgba(2,40,35,0.80)); }
+.hero__overlay--dark { background: linear-gradient(180deg, rgba(17,23,38,0.55), rgba(17,23,38,0.72)); }
+.hero__overlay--teal { background: linear-gradient(180deg, rgba(33,49,107,0.62), rgba(10,16,40,0.82)); }
 .hero__overlay--red  { background: linear-gradient(180deg, rgba(120,30,22,0.55), rgba(80,18,12,0.80)); }
 .hero__content { position: relative; z-index: 2; width: 100%; }
 .hero__content .container { max-width: 880px; }
@@ -299,7 +301,7 @@ p  { color: var(--dark); }
 .ward-card { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); scroll-snap-align: start; transition: transform var(--t-base), box-shadow var(--t-base); }
 .ward-card:hover { transform: scale(1.02); box-shadow: var(--shadow-md); }
 .ward-card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
-.ward-card__cap { position: absolute; inset: auto 0 0 0; padding: 40px 18px 18px; background: linear-gradient(180deg, transparent, rgba(26,46,59,0.92)); color: var(--white); }
+.ward-card__cap { position: absolute; inset: auto 0 0 0; padding: 40px 18px 18px; background: linear-gradient(180deg, transparent, rgba(17,23,38,0.92)); color: var(--white); }
 .ward-card__cap .name { font-family: var(--ff-head); font-weight: 700; font-size: 1.1rem; }
 .ward-card__cap .sub { font-size: 0.82rem; color: var(--gold); }
 
@@ -329,7 +331,7 @@ p  { color: var(--dark); }
 .feature-banner { position: relative; color: var(--white); border-radius: var(--radius-lg); overflow: hidden; }
 .feature-banner__media { position: absolute; inset: 0; }
 .feature-banner__media img { width: 100%; height: 100%; object-fit: cover; }
-.feature-banner__overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(26,46,59,0.92) 40%, rgba(26,46,59,0.55)); }
+.feature-banner__overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(17,23,38,0.92) 40%, rgba(17,23,38,0.55)); }
 .feature-banner__inner { position: relative; z-index: 2; padding: clamp(40px, 7vw, 80px); max-width: 620px; }
 .feature-banner h2 { color: var(--white); margin-bottom: 14px; }
 .feature-banner p { color: rgba(255,255,255,0.88); }
@@ -376,8 +378,8 @@ p  { color: var(--dark); }
 .gallery-item { break-inside: avoid; margin-bottom: 14px; position: relative; border-radius: var(--radius); overflow: hidden; cursor: pointer; box-shadow: var(--shadow-sm); }
 .gallery-item img { width: 100%; transition: transform var(--t-base); }
 .gallery-item:hover img { transform: scale(1.05); }
-.gallery-item__cap { position: absolute; inset: 0; background: rgba(0,107,94,0.0); display: flex; align-items: flex-end; padding: 16px; opacity: 0; transition: opacity var(--t-base), background var(--t-base); }
-.gallery-item:hover .gallery-item__cap { opacity: 1; background: linear-gradient(180deg, transparent, rgba(0,107,94,0.85)); }
+.gallery-item__cap { position: absolute; inset: 0; background: rgba(33,49,107,0.0); display: flex; align-items: flex-end; padding: 16px; opacity: 0; transition: opacity var(--t-base), background var(--t-base); }
+.gallery-item:hover .gallery-item__cap { opacity: 1; background: linear-gradient(180deg, transparent, rgba(33,49,107,0.85)); }
 .gallery-item__cap span { color: var(--white); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .gallery-item.hide { display: none; }
 
@@ -525,15 +527,15 @@ p  { color: var(--dark); }
 @keyframes eyebrowShine { to { background-position: 220% center; } }
 
 /* --- Aurora hero (photo-less pages: mental wellness, packages, contact) --- */
-.hero--aurora { background: #0C1A20; overflow: hidden; }
+.hero--aurora { background: #0B1022; overflow: hidden; }
 .hero--aurora .hero__aurora {
   position: absolute; inset: -25%; z-index: 0;
   filter: blur(46px) saturate(125%);
   background:
-    radial-gradient(38% 46% at 18% 28%, rgba(0,140,122,0.85), transparent 70%),
-    radial-gradient(42% 52% at 78% 22%, rgba(232,168,56,0.45), transparent 72%),
-    radial-gradient(48% 58% at 62% 78%, rgba(0,107,94,0.95), transparent 72%),
-    radial-gradient(40% 50% at 28% 82%, rgba(13,32,42,0.95), transparent 70%);
+    radial-gradient(38% 46% at 18% 28%, rgba(33,49,107,0.90), transparent 70%),
+    radial-gradient(42% 52% at 78% 22%, rgba(53,182,232,0.50), transparent 72%),
+    radial-gradient(48% 58% at 62% 78%, rgba(33,49,107,0.95), transparent 72%),
+    radial-gradient(40% 50% at 28% 82%, rgba(10,14,28,0.95), transparent 70%);
   background-repeat: no-repeat;
   animation: auroraDrift 22s ease-in-out infinite alternate;
 }
@@ -542,7 +544,7 @@ p  { color: var(--dark); }
   50%  { transform: translate3d(3%, 2%,0) scale(1.14) rotate(2deg); }
   100% { transform: translate3d(-2%,3%,0) scale(1.07) rotate(-1deg); }
 }
-.hero__overlay--aurora { background: linear-gradient(180deg, rgba(10,20,26,0.34), rgba(10,20,26,0.62)); }
+.hero__overlay--aurora { background: linear-gradient(180deg, rgba(10,14,28,0.36), rgba(10,14,28,0.64)); }
 .hero--aurora::after { /* fine grain to avoid banding */
   content:""; position:absolute; inset:0; z-index:1; pointer-events:none; opacity:0.5; mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
@@ -572,14 +574,14 @@ p  { color: var(--dark); }
 .spotlight { position: relative; overflow: hidden; }
 .spotlight::before {
   content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0;
-  background: radial-gradient(220px circle at var(--mx,50%) var(--my,50%), rgba(0,107,94,0.10), transparent 60%);
+  background: radial-gradient(220px circle at var(--mx,50%) var(--my,50%), rgba(33,49,107,0.10), transparent 60%);
   transition: opacity .3s ease;
 }
 .spotlight:hover::before { opacity: 1; }
 .spotlight > * { position: relative; z-index: 1; }
 
 /* --- Aurora-tinted banner replacement for photo feature banners --- */
-.aurora-banner { position: relative; overflow: hidden; color: var(--white); border-radius: 0; background: #0C1A20; }
+.aurora-banner { position: relative; overflow: hidden; color: var(--white); border-radius: 0; background: #0B1022; }
 .aurora-banner .hero__aurora { filter: blur(54px) saturate(120%); }
 .aurora-banner__inner { position: relative; z-index: 2; max-width: 640px; padding: clamp(40px,7vw,80px); }
 .aurora-banner h2 { color: var(--white); margin-bottom: 14px; }
@@ -692,3 +694,15 @@ a.card { display: block; }
 .photo-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
 .photo-strip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; transition: transform var(--t-base); }
 .photo-strip img:hover { transform: scale(1.02); }
+
+
+/* ============================================================
+   LOGO COLOUR ACCENTS — red on light, light blue on dark
+   ============================================================ */
+.section--teal .eyebrow, .section--dark .eyebrow, .aurora-banner .eyebrow {
+  -webkit-text-fill-color: var(--lightblue); color: var(--lightblue);
+}
+.logo__tag { color: var(--lightblue); }
+.nav__links a.navlink:hover, .nav__links a.navlink.active { color: var(--lightblue); }
+.section--teal .arrow-link, .section--dark .arrow-link, .aurora-banner .arrow-link { color: var(--lightblue); }
+.btn--white { color: var(--teal); }
