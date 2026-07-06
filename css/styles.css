@@ -5,21 +5,23 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-  --teal:        #21316B;
-  --teal-dark:   #17224E;
-  --teal-light:  #E9F2FB;
-  --gold:        #E23A2E;
-  --gold-dark:   #C22C21;
-  --dark:        #111726;
-  --dark-90:     rgba(17, 23, 38, 0.90);
+  --teal:        #3F4281;
+  --teal-dark:   #2C2E5C;
+  --teal-light:  #EAEAF4;
+  --gold:        #EC5F4D;
+  --gold-dark:   #D1442F;
+  --dark:        #282A2C;
+  --dark-90:     rgba(40, 42, 44, 0.90);
   --light-bg:    #F5F7F9;
   --white:       #FFFFFF;
   --muted:       #6B7C88;
   --border:      #E2E8ED;
-  --red:         #C0392B;
-  --lightblue:   #35B6E8;
-  --lightblue-dark: #1E9AD0;
-  --red-dark:    #A2301F;
+  --red:         #EC5F4D;
+  --lightblue:   #4EC5EA;
+  --lightblue-dark: #2FA6CB;
+  --red-dark:    #C33823;
+  --green:       #6FC59E;
+  --green-dark:  #55A47F;
 
   --shadow-sm:   0 2px 8px rgba(17, 23, 38, 0.06);
   --shadow-md:   0 6px 24px rgba(17, 23, 38, 0.10);
